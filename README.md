@@ -30,4 +30,5 @@ This Bash script registers a validator on the Aztec network using the `aztec` CL
 screen -S regvalidator
 git clone https://github.com/yourusername/aztec-validator-registration-script.git
 cd aztec-validator-registration-script
-chmod +x register-validator.sh****
+chmod +x register-validator.sh
+./register-validator.sh****
