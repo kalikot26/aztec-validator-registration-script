@@ -24,11 +24,33 @@ This Bash script registers a validator on the Aztec network using the `aztec` CL
 
 ---
 
-## 📁 Cloning the Script
+## ⚠️ Timestamp Configuration (IMPORTANT)
+
+If you get an error like this:
+
+Error: ValidatorQuotaFilledUntil(uint256 _timestamp)
+(1746568152)  <-- copy the value
+
+
+Copy the **timestamp value** (e.g., `1746568152`) and update the script:
+
+### 🔧 How to update:
+
+```bash
+nano register-validator.sh
+````
+Look for:
+TARGET_TIMESTAMP=
+Paste the new value from the error and save the file (Ctrl + s) and exit (Ctrl + X).
+
+##📁 Cloning & Running the Script (Recommended with screen)
 
 ```bash
 screen -S regvalidator
-git clone https://github.com/yourusername/aztec-validator-registration-script.git
+git clone https://github.com/kalikot26/aztec-validator-registration-script.git
 cd aztec-validator-registration-script
 chmod +x register-validator.sh
-./register-validator.sh****
+./register-validator.sh
+```
+To detach the session: Ctrl + A, then D
+To reconnect later: screen -r regvalidator
