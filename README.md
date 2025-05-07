@@ -47,12 +47,15 @@ chmod +x register-validator.sh
 nano register-validator.sh
 ````
 Look for:
+
 TARGET_TIMESTAMP=
 Paste the new value from the error and save the file (Ctrl + s) and exit (Ctrl + X).
+
 Apply your RPC, PrivKey, and Address
 
 ```run script
 ./register-validator.sh
 ```
 To detach the session: Ctrl + A, then D
+
 To reconnect later: screen -r regvalidator
