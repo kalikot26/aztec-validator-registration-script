@@ -38,7 +38,7 @@ Copy the **timestamp value** (e.g., `1746568152`) and update the script:
 
 ```bash
 screen -S regvalidator
-wget -q -O register-validator.sh https://raw.githubusercontent.com/kalikot26/aztec-validator-registration-script/refs/heads/main/register-validator.sh
+wget -O register-validator.sh https://raw.githubusercontent.com/kalikot26/aztec-validator-registration-script/main/register-validator.sh
 chmod +x register-validator.sh
 ```
 ### 🔧 How to update:
